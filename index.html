@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -9,6 +8,18 @@
  </head>
  <body >
 
+ 	<content>
+	<form method="POST" action="valid.php">
+	<label for="username">Введите ваш логин:</label>
+	<input type="text" name="username">
+	<label for="password">Введите ваш пароль:</label>
+	<input type="password" name="password1">
+	<label for="password">Введите пароль еще раз:</label>
+	<input type="password" name="password2">
+	<button type="submit" name="vhod">Вход</button>
+	</form>
+	</content>
+
  	<h1><i>ВЕЛИКИЕ ФРАЗЫ</i></h1> 
 	<h3><em>САЙТ СДЕЛАН ЧИСТО ПО ФАНУ, С ЦЕЛЬЮ СДАЧИ ЗАЧЕТА</em> </h3>
 	<p> Данный сайт, преднозначен для показа рандомных умных фраз. Идет взаимная работа сбазой данных, в которой содержатся данные цитаты! </p> 
@@ -17,6 +28,7 @@
  <form action="scriptphp.php" method="POST">          
 	  <input type="submit" name="GenPhrase" value="Сгенерировать">
  </form>
+
 
  </body>
 </html>
