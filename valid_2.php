@@ -1,5 +1,4 @@
 <?php 
-
 $dbc = mysqli_connect('localhost', 'root', '', 'lesson');
 if(!isset($_COOKIE['user_id'])) {
 	if(isset($_POST['vhod2'])) {
