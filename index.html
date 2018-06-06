@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <title>ВЕЛИКИЕ ФРАЗЫ</title>
-  <link rel="stylesheet" href="css/css.css">
+ <head> <!-- заголовок сайта -->
+  <meta charset="UTF-8"> <!-- кодировка -->
+  <title>ВЕЛИКИЕ ФРАЗЫ</title>  <!-- заголовок вкладки -->
+  <link rel="stylesheet" href="css/css.css"> <!-- подключение к файлу стиля  -->
   <?php include('index.php'); ?>
  </head>
- <body >
+ <body > <!-- тело сайта -->
 
  	<content>
-	<form method="POST" action="valid.php">
-	<label for="username">Введите ваш логин:</label>
-	<input type="text" name="username">
+	<form method="POST" action="valid.php"><!-- подключение к коду файлу для регестрации  -->
+	<label for="username">Введите ваш логин:</label><!-- что написанно перед формой заполнения -->
+	<input type="text" name="username"> <!-- форма заполнения -->
 	<label for="password">Введите ваш пароль:</label>
 	<input type="password" name="password1">
 	<label for="password">Введите пароль еще раз:</label>
 	<input type="password" name="password2">
-	<button type="submit" name="vhod">Вход</button>
+	<button type="submit" name="vhod">Регестрация</button><!-- Кнопка для регестрации -->
 	</form>
 	</content>
+
+</content>
+<section>
+<?php
+	if(empty($_COOKIE['username'])) {
+?>
+	<form action="valid_2.php" method="POST"> 
+		<!-- подключение к коду файлу для входа зарегестрированным  -->
+	<label for="username">Логин:</label>
+	<input type="text" name="username">
+	<label for="password">Пароль:</label>
+	<input type="password" name="password">
+	<button type="submit" name="vhod2">Вход</button> <!-- Кнопка для входа -->
+	</form>
+<?php
+}
+</section>
+
+
 
  	<h1><i>ВЕЛИКИЕ ФРАЗЫ</i></h1> 
 	<h3><em>САЙТ СДЕЛАН ЧИСТО ПО ФАНУ, С ЦЕЛЬЮ СДАЧИ ЗАЧЕТА</em> </h3>

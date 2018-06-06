@@ -3,17 +3,20 @@
 	padding: 0;
 }
 php{
-
+	text-align: center;
 }
+
 html{
 	background-color: #1164B4;
 	font-family: Arial;
 
 }
+
 body{
 	text-align: center;
 		
 }
+
 h1{color:#F46A2A; font-size: 60px;
 	padding: 0 0 20px 0;
 }
@@ -23,13 +26,20 @@ h3{
 	padding: 0 0 20px 0;
 
 }
+
+
+
 p{
 	color: #8DF42A;
 	font-size: 15px;
 	padding: 0 30px 30px 30px;
 
 }
-.head {
-	background: url(../img/bg.jpg) no-repeat center center;
-	background-size: cover;
+
+
+label, input {
+	width: 70%;
+	display: block;
+	padding: 5px;
+	
 }

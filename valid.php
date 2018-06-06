@@ -1,9 +1,9 @@
 <?php
 if(isset($_POST['vhod'])){
 	
-$dbc = mysqli_connect('localhost', 'root', '', 'lesson');
+$dbc = mysqli_connect('localhost', 'root', '', 'lesson');/*подключение к БД хост, логин, пароль, БД*/
 if (!$dbc) { 
-   printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error()); 
+   printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error()); /*ошибка подключения*/
    exit; 
 } 
 
