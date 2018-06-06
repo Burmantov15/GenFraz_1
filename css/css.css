@@ -6,19 +6,19 @@ php{
 	text-align: center;
 }
 
-html{
+html{ /*фон и тип шрифта*/
 	background-color: #1164B4;
 	font-family: Arial;
 
 }
 
 body{
-	text-align: center;
+	text-align: center; /*текст по центру в теле*/
 		
 }
 
-h1{color:#F46A2A; font-size: 60px;
-	padding: 0 0 20px 0;
+h1{color:#F46A2A; font-size: 60px; /*Цвет заголовка, размер кегль*/
+	padding: 0 0 20px 0; /*смещение*/
 }
 h3{
 
